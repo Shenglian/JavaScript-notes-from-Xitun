@@ -26,7 +26,7 @@ console.log(a.constructor === a.__proto__.constructor);  //true
 
 ## 3. 誰才有 `constructor` 屬性？
 
-函式的 **原型物件** 才有 `constructor` 屬性。( 這邊應該是所有的原型物件，不單只有函式 )
+函式的 **原型物件** 才有 `constructor` 屬性。( 這邊應該是所有的原型物件，不單只有函式 );
 當宣告一個函數的時候，會同時創建一個**原型物件**，賦值到函數的 `prototype` 屬性，作為使用 `new` 生成實例物件的預設原型物件。
 該預設 **原型物件** 的內容是：
 
@@ -165,7 +165,7 @@ console.log(a.constructor.prototype.constructor === A); // true
 
 ## 4. 只有函式有 `prototype` 屬性。
 
-## 5. 所有函式的 `__proto__` 都指向 `Function.prototype` ，它是一個空函數（Empty function）。
+## 5. 所有函式的 `__proto__` 都指向 `Function.prototype`
 
 ```javascript
 Number.__proto__ === Function.prototype  // true
